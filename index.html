@@ -141,16 +141,40 @@ text-align: center;
         option['series'][1]['stack'] = 'population';
 </script>
 <div id="main2" style="width: 600px;height:400px;"></div>
-	<script type="text/javascript">
-        $(function(){
-		console.log("Enter Jquery Block");
- 
-         $.getJSON('jam.json',function(data){
-                var option = data;
-                console.log(data);
-        var myChart2 = echarts.init(document.getElementById('main2'));
-        myChart2.setOption(option);});
-			})
-		</script>	
+      <script type="text/javascript">
+            //基於準備好的dom，初始化echarts實例
+            var myChart2 = echarts.init(document.getElementById('main2'));
+            //指定圖表的配置項和數據
+            var option = {
+                title: {
+                    text: '香況2016年第四季按居所租住權劃分的家庭住戶數目',
+                    x: 'center'
+                },
+                tooltip: {
+                    trigger: 'item',
+                    formatter: "{a} <br/>{b} : {c} ({d}%)"
+                },
+                legend: {
+                    x: 'center',
+                    y: 'bottom',
+                    data: ['自置居所住戶(公營房屋)', '自置居所住戶(私人房屋)', '全租戶', '合租戶', '居所由僱主提供', '其他']	
+                },
+    {
+    "series" : [
+        {
+            "name": "2016年第四季香港按居所租住權劃分的家庭住戶數目",
+            "type": "pie",
+            "radius": "55%",
+            "data":[
+                {"value":49.9, "name":"自置居所住戶(公營房屋)"},
+                {"value":14.6, "name":"自置居所住戶(私人房屋)"},
+                {"value":45.6, "name":"全租戶"},
+                {"value":0.4, "name":"合租戶"},
+                {"value":1.7, "name":"居所由僱主提供"},
+                {"value":2.3, "name":"其他"}
+            ]
+        }
+    ]
+}
 </body>
 </html>
