@@ -13,7 +13,6 @@
     <div id="main1" style="width: 600px;height:400px;"></div>
     <div id="main2" style="width: 600px;height:400px;"></div>
 <script src="echarts.js"></script>
-<script src="theme/vintage.js"></script>
     <script type="text/javascript">
         // Initialse eCharts
         option = {
@@ -76,14 +75,14 @@
             })
         });
     </script>
-
-
+<script src="theme/dark.js"></script>
 <script>
-// 第二个参数可以指定前面引入的主题
-var chart = echarts.init(document.getElementById('main'), 'vintage');
+var chart = echarts.init(document.getElementById('main'), 'dark');
 chart.setOption({
     ...
 });
 </script>
+    
+    
 </body>
 </html>
