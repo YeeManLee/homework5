@@ -4,9 +4,9 @@
     },
     "legend": {
         "data": ["公營租住房屋", "資助自置居所房屋", "私人永久性房屋", "臨時房屋"],
-        "align": "left",
+        "align": "right",
         "top": 50,
-        "left": 500
+        "right": 500
     },
     "xAxis": [{
         "type": "category",
