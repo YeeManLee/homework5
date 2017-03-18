@@ -5,9 +5,20 @@
     "legend": {
         "data": ["公營租住房屋", "資助自置居所房屋", "私人永久性房屋", "臨時房屋"],
         "align": "left",
-        "top": 20,
-        "left": 100
+        "top": 50,
+        "left": 500
     },
+     "tooltip": {
+                    trigger: 'axis',
+                    axisPointer: {
+                        type: 'shadow'
+                    },
+          "markPoint": {
+                    "data": [{
+                        "type": "max",
+                        "name": "max"
+                    }]
+                },
     "xAxis": [{
         "type": "category",
         "data": [
