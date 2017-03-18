@@ -140,43 +140,5 @@ text-align: center;
         option['series'][0]['stack'] = 'population';
         option['series'][1]['stack'] = 'population';
     </script>
-	        <div id="main2" style="width:720px;height:480px;"></div>
-        <script type="text/javascript">
-            var myChart2 = echarts.init(document.getElementById('jam'));
-            var option = {
-                title: {
-                    text: '2016年第四季香港按居所租住權劃分的家庭住戶數目',
-                    x: 'center'
-                },
-                tooltip: {
-                    trigger: 'item',
-                    formatter: "{a} <br/>{b} : {c} ({d}%)"
-                },
-                legend: {
-                    x: 'center',
-                    y: 'bottom',
-                    data: ['自置居所住戶(公營房屋)', '自置居所住戶(私人房屋)', '全租戶', '合租戶', '居所由僱主提供', '其他']
-                },
-                toolbox: {
-                    show: true,
-                    feature: {
-                        mark: {
-                            show: true
-                        },
-		    "series" : [{
-            name: '2016年第四季香港按居所租住權劃分的家庭住戶數目',
-            type: 'pie',
-            radius: '55%',
-            data:[
-                {value:49.9, name:'自置居所住戶(公營房屋)'},
-                {value:14.6, name:'自置居所住戶(私人房屋)'},
-                {value:45.6, name:'全租戶'},
-                {value:0.4, name:'合租戶'},
-                {value:1.7, name:'居所由僱主提供'},
-                {value:2.3, name:'其他'}
-            ]
-        }
-    ]
-}
 </body>
 </html>
