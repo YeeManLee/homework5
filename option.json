@@ -8,11 +8,6 @@
         "top": 50,
         "left": 500
     },
-     "tooltip": {
-                    trigger: 'axis',
-                    axisPointer: {
-                        type: 'shadow'}
-                    },
           "markPoint": {
                     "data": [{
                         "type": "max",
