@@ -158,23 +158,23 @@ text-align: center;
         formatter: "{a} <br/>{b} : {c} ({d}%)"
     },
     legend: {
-        orient: 'center',
-        left: 'bottom',
+        orient: 'vertical',
+        left: 'right',
         data: ['自置居所住戶(公營房屋)', '自置居所住戶(私人房屋)', '全租戶', '合租戶', '居所由僱主提供', '其他']
     },
     series : [
         {
-            name: '访问来源',
+            name: '千戶',
             type: 'pie',
             radius : '55%',
             center: ['50%', '60%'],
             data:[
-                {value:49.9, name:'自置居所住戶(公營房屋)'},
-                {value:14.6, name:'自置居所住戶(私人房屋)'},
-                {value:45.6, name:'全租戶'},
-                {value:0.4, name:'合租戶'},
-                {value:1.7, name:'居所由僱主提供'},
-	        {value:2.3, name:'其他'}
+                {value:364.9, name:'自置居所住戶(公營房屋)'},
+                {value:885.7, name:'自置居所住戶(私人房屋)'},
+                {value:1142.4, name:'全租戶'},
+                {value:11.0, name:'合租戶'},
+                {value:43.8, name:'居所由僱主提供'},
+	        {value:58.9, name:'其他'}
             ],
             itemStyle: {
                 emphasis: {
