@@ -1,16 +1,16 @@
 {
     series : [
         {
-            name: '2016年第四季香港按居所租住權劃分的家庭住戶數目',
-            type: 'pie',
-            radius: '55%',
+            name: "2016年第四季香港按居所租住權劃分的家庭住戶數目",
+            type: "pie",
+            radius: "55%",
             data:[
-                {value:49.9, name:'自置居所住戶(公營房屋)'},
-                {value:14.6, name:'自置居所住戶(私人房屋)'},
-                {value:45.6, name:'全租戶'},
-                {value:0.4, name:'合租戶'},
-                {value:1.7, name:'居所由僱主提供'},
-                {value:2.3, name:'其他'}
+                {value:49.9, name:"自置居所住戶(公營房屋)"},
+                {value:14.6, name:"自置居所住戶(私人房屋)"},
+                {value:45.6, name:"全租戶"},
+                {value:0.4, name:"合租戶"},
+                {value:1.7, name:"居所由僱主提供"},
+                {value:2.3, name:"其他"}
             ]
         }
     ]
