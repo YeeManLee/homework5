@@ -63,27 +63,43 @@ text-align: center;
                     "alignWithLabel": true
                 }
             }],
-"yAxis": [{
-                "type": "value"
-            }],
-            "series": [{
-                "name": "Male",
-                "type": "bar",
-                "data": [
-                    2811991,
-                    3108107,
-                    3285344
-                ],
-            }, {
-                "name": "Female",
-                "type": "bar",
-                "data": [
-                    2710290,
-                    3109449,
-                    3423045
-                ],
-            }]
-        };
+    "yAxis": [{
+        "type": "value"
+    }],
+    "series": [{
+        "name": "公營租住房屋",
+        "type": "bar",
+        "data": [
+            2811991,
+            3108107,
+            3285344
+        ]
+    }, {
+        "name": "資助自置居所房屋",
+        "type": "bar",
+        "data": [
+            2710290,
+            3109449,
+            3423045
+        ]
+    }, {
+        "name": "私人永久性房屋",
+        "type": "bar",
+        "data": [
+            2710290,
+            3109449,
+            3423045
+        ]
+    }, {
+        "name": "臨時房屋",
+        "type": "bar",
+        "data": [
+            2710290,
+            3109449,
+            3423045
+        ]
+    }]
+};
         // Use the option to display chart
         var myChart1 = echarts.init(document.getElementById('main1'));
         myChart1.setOption(option);
