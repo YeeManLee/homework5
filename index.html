@@ -63,11 +63,11 @@ text-align: center;
                     "alignWithLabel": true
                 }
             }],
-            "yAxis": [{
+"yAxis": [{
                 "type": "value"
             }],
             "series": [{
-                "name": "公營租住房屋",
+                "name": "Male",
                 "type": "bar",
                 "data": [
                     2811991,
@@ -75,21 +75,7 @@ text-align: center;
                     3285344
                 ],
             }, {
-                "name": "資助自置居所房屋",
-                "type": "bar",
-                "data": [
-                    2710290,
-                    3109449,
-                    3423045
-                ],{
-                "name": "私人永久性房屋",
-                "type": "bar",
-                "data": [
-                    2710290,
-                    3109449,
-                    3423045
-                ],{
-                "name": "臨時房屋",
+                "name": "Female",
                 "type": "bar",
                 "data": [
                     2710290,
@@ -106,31 +92,6 @@ text-align: center;
         var myChart2 = echarts.init(document.getElementById('main2'));
         myChart2.setOption(option);
     </script>
-    
-     <script type="text/javascript">
-        // jQuery conventional framework.
-        // This ensures the code block is executed after whole document is ready
-        $(function() {
-            // Argument 1: URL to the external JSON file
-            // Argument 2: The placeholder variable of the data loaded from external JSON file
-            $.getJSON('option.json', function(data) {
-                // When entering this part, variable "data" holds the Javascript object 
-                // corresponding to the external JSON file
-                var option = data;
-                var myChart1 = echarts.init(document.getElementById('main1'));
-                myChart1.setOption(option);
-            })
-        });
-    </script>
-	<script src="echarts.js"></script>
-<!-- 引入 dark 主题 -->
-<script src="theme/dark.js"></script>
-<script>
-// 第二个参数可以指定前面引入的主题
-var chart = echarts.init(document.getElementById('main'), 'dark');
-chart.setOption({
-    ...
-});
-</script>
 </body>
+
 </html>
